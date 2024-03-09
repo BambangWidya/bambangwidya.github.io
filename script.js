@@ -14,17 +14,17 @@ prevBtn.forEach((button) => {
   });
 });
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const inputs = [];
-  form.querySelectorAll("input").forEach((input) => {
-    const { name, value } = input;
-    inputs.push({ name, value });
-  });
+//form.addEventListener("submit", (e) => {
+ // e.preventDefault();//
+  //const inputs = [];
+  //form.querySelectorAll("input").forEach((input) => {
+   // const { name, value } = input;
+    //inputs.push({ name, value });
+  //});
  // window.open("terimakasih.html");//
- console.log(inputs);
-  form.reset();
-});
+// console.log(inputs);//
+  //form.reset();
+//}); //
 
 function changeStep(btn) {
   let index = 0;
