@@ -4,7 +4,8 @@
     box-sizing: border-box;
   }
   body{
-    font-family: "Montserrat";
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+    /*font-family: "Montserrat"; */
     background-image: url(orasi.png);
     background-position: center; 
     background-size: cover;
@@ -17,7 +18,7 @@
     justify-content: center;
   }
   .container{
-    max-width: 500px;
+    max-width: 800px;
     width: 100%;
     padding: 20px;
     box-shadow: 0px 0px 20px #00000020;
@@ -31,18 +32,36 @@
     display: block;
   }
   .form-group {
-    width: 100%;
+   /* width: 100%; */
     margin-top: 20px;
+	 /* align-items: left;*/
+   text-align: justify;
+
   }
+   
   .form-group input {
-    width: 100%;
+   /* width: 100%; */
     border: 1.5px solid rgba(128, 128, 128, 0.418);
     padding: 5px;
     font-size: 18px;
     margin-top: 5px;
     border-radius: 4px;
+    text-align: justify;
+    line-height: 1.5;
+  /*	align-items: left;*/
   }
+
   
+  input[type=text] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    
+ .form-group select {
+      margin-left: 1px;
+  }  
   button.next-btn,
   button.previous-btn,
   button.submit-btn {
@@ -62,5 +81,8 @@
   }
   button.submit-btn {
     background-color: aquamarine;
+ }
+    
+  button:hover {
+    background: orange;
   }
-  

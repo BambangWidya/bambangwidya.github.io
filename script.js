@@ -21,7 +21,8 @@ form.addEventListener("submit", (e) => {
     const { name, value } = input;
     inputs.push({ name, value });
   });
-  console.log(inputs);
+ // window.open("terimakasih.html");//
+ console.log(inputs);
   form.reset();
 });
 

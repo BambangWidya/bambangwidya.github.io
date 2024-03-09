@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survei Lingkungan Belajar</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="icon" href="myfavicon.png" type="image/x-icon">
 </head>
 
 <body>
     <section>
         <div class="container">
-          <form>
-      
+          <form method="POST" action="https://script.google.com/macros/s/AKfycby-RHc5W_dDQWwdKtVxNwi5t4eUAP29d2PFSf2Il2Y9Ory3CE21iTUm02ZDUTxmxwfK/exec">
             <div class="step step-1 active">
               <div class="form-group">
                 <h1>Survei Lingkungan Belajar Aman, Nyaman, Menyenangkan, dan Inklusif </h1> 
@@ -27,20 +27,20 @@
 <p>Terima kasih atas partisipasi Anda! Mari bersama-sama menciptakan lingkungan belajar yang lebih baik untuk semua!</p>
     <br>
 
-                <label for="Nama">Nama</label>
-                <input type="text" id="Nama" name="Nama">
+                <label for="Nama">Nama</label> <br>
+                <input type="text" class="text"id="Nama" name="Nama">
               </div>
               <div class="form-group">
-                <label for="Asal Sekolah">Asal Sekolah</label>
-                <input type="text" id="Asal Sekolah" name="Asal Sekolah">
+                <label for="Asal Sekolah">Asal Sekolah</label> <br>
+                <input class="text" type="text" id="Asal Sekolah" name="Asal Sekolah">
               </div>
               <div class="form-group">
-                <label for="Alamat Sekolah">Alamat Sekolah</label>
-                <input type="text" id="Alamat Sekolah" name="Alamat Sekolah">
+                <label for="Alamat Sekolah">Alamat Sekolah</label> <br>
+                <input class="text" type="text" id="Alamat Sekolah" name="Alamat Sekolah">
               </div>
               <div class="form-group">
                 <label for="jabatan">Jabatan</label><br>
-                <select name="jabatan" id="jabatan">
+                <select name="jabatan" id="jabatan" class="select"> <br>
                   <option value="kepala-sekolah">Kepala Sekolah</option>
                   <option value="guru">Guru</option>
                   <option value="komite">Komite Sekolah</option>
@@ -54,34 +54,364 @@
             <div class="step step-2">
               <div class="form-group">
                 <h3>A. Lingkungan Belajar yang Aman </h3><br>
-                <h3>Pertanyaan 1. </h3><br>
-                <label for="pertanyaan-1">Apakah ada sistem keamanan elektronik, seperti kamera pengawas, yang terpasang di sekitar area sekolah?</label>
-                <input type="text" id="pertanyaan-1" name="pertanyaan-1">
+                <h3>Pertanyaan 1</h3><br>
+                <label for="pertanyaan-1"><strong><em>Apakah ada sistem keamanan elektronik, seperti kamera pengawas, yang terpasang di sekitar area sekolah? </em></strong></label> <br>         
+                <input type="radio" id="opsi-1a" name="pertanyaan-1" value="opsi-1a">
+                <label for="opsi-1a">Ya, sistem keamanan elektronik terpasang dan berfungsi dengan baik. (Sekolah kami telah menginstal kamera pengawas untuk memantau aktivitas di sekitar area sekolah, yang dapat membantu meningkatkan keamanan.)</label>
+                <br> <input type="radio" id="opsi-1b" name="pertanyaan-1" value="opsi-1b"/>
+                <label for="opsi-1b">Ya, namun ada beberapa masalah teknis. (Meskipun sistem keamanan elektronik terpasang, ada beberapa masalah teknis yang perlu segera diperbaiki.)</label>
+                <br> <input type="radio" id="opsi-1c" name="pertanyaan-1" value="opsi-1c"/>
+                <label for="opsi-1c">Tidak yakin. (Warga sekolah tidak yakin apakah ada sistem keamanan elektronik di sekolah.)</label>
+                <br> <input type="radio" id="opsi-1d" name="pertanyaan-1" value="opsi-1d"/>
+                <label for="opsi-1d">Tidak, belum diimplementasikan. (Saat ini belum ada sistem keamanan elektronik yang terpasang di sekitar area sekolah.)</label><br>
               </div>
-           <button type="button" class="previous-btn">Sebelumnya</button>
+              <button type="button" class="previous-btn">Sebelumnya</button>
+              <button type="button" class="next-btn">Selanjutnya</button>
+           </div>
+           
+           <div class="step step-3">
+              <div class="form-group">
+                <h3>Pertanyaan 2</h3><br>
+                <label for="pertanyaan-2"><strong><em>Apakah terdapat prosedur evakuasi darurat yang telah diinformasikan kepada semua siswa dan warga sekolah? </em></strong></label> <br>
+                <br>                
+                <input type="radio" id="opsi-2a" name="pertanyaan-2" value="opsi-2a">
+                <label for="opsi-2a">semua siswa dan warga sekolah telah diinformasikan dan terlatih mengenai prosedur evakuasi darurat (Sekolah telah mengadakan pelatihan dan informasi mengenai prosedur evakuasi darurat kepada semua siswa dan staf.)
+                </label><br>
+                <br>
+                <input type="radio" id="opsi-2b" name="pertanyaan-2" value="opsi-2b">
+                <label for="opsi-2b">Ya, namun hanya sebagian kecil siswa dan warga sekolah yang tahu tentang prosedur evakuasi darurat.(Meskipun ada informasi, hanya sebagian kecil siswa dan staf yang telah mengetahui prosedur evakuasi darurat.)
+                </label><br>
+                <br>
+                <input type="radio" id="opsi-2c" name="pertanyaan-2" value="opsi-2c">
+                <label for="opsi-2c">Tidak yakin (Siswa dan warga sekolah tidak yakin apakah ada prosedur evakuasi darurat yang telah diinformasikan.) </label><br>
+                <br>
+                <input type="radio" id="opsi-2d" name="pertanyaan-2" value="opsi-2d">
+                <label for="opsi-2d">Tidak ada prosedur evakuasi darurat yang diinformasikan (Saat ini, belum ada prosedur evakuasi darurat yang diinformasikan kepada siswa dan warga sekolah) </label><br>
+              </div>
+              <button type="button" class="previous-btn">Sebelumnya</button>
+              <button type="button" class="next-btn">Selanjutnya</button>
+              
+            </div><div class="step step-4">
+              <div class="form-group">
+                <h3>Pertanyaan 3</h3><br>
+                <label for="pertanyaan-3"><strong><em>Bagaimana kebijakan pengawalan keamanan di area sekolah pada jam-jam tertentu, terutama saat siswa tiba dan pulang sekolah? </em></strong> </label> <br>
+                <br>                
+                <input type="radio" id="opsi-3a" name="pertanyaan-3" value="opsi-3a">
+                <label for="opsi-3a">Pengawalan keamanan di area sekolah sangat baik pada semua jam, termasuk saat siswa tiba dan pulang sekolah (Terdapat petugas keamanan yang melakukan pengawalan dengan baik, memastikan keamanan siswa selama kedatangan dan kepulangan.) </label><br>
+                <br>
+                <input type="radio" id="opsi-3b" name="pertanyaan-3" value="opsi-3b">
+                <label for="opsi-3b">Pengawalan keamanan cukup baik, namun ada beberapa waktu di mana keamanan kurang terpantau (Ada upaya pengawalan keamanan, namun terdapat beberapa waktu di mana keamanan mungkin tidak sepenuhnya terpantau.)
+                </label><br>
+                <br>
+                <input type="radio" id="opsi-3c" name="pertanyaan-3" value="opsi-3c">
+                <label for="opsi-3c">Tidak yakin (Siswa dan staf tidak yakin sejauh mana pengawalan keamanan dilakukan saat siswa tiba dan pulang sekolah) </label><br>
+                <br>
+                <input type="radio" id="opsi-3d" name="pertanyaan-3" value="opsi-3d">
+                <label for="opsi-3d">Tidak ada kebijakan pengawalan keamanan yang diterapkan (Saat ini, tidak ada kebijakan khusus yang mengatur pengawalan keamanan saat siswa tiba dan pulang sekolah.)
+                </label><br>
+              </div>
+              <button type="button" class="previous-btn">Sebelumnya</button>
               <button type="button" class="next-btn">Selanjutnya</button>
             </div>
-      
-            <div class="step step-3">
-              <div class="form-group">
-                <label for="country">country</label>
-                <input type="text" id="country" name="country">
-              </div>
-              <div class="form-group">
-                <label for="city">City</label>
-                <input type="text" id="city" name="city">
-              </div>
-              <div class="form-group">
-                <label for="postCode">Post Code</label>
-                <input type="text" id="postCode" name="post-code">
-              </div>
-              <button type="button" class="previous-btn">Prev</button>
-              <button type="submit" class="submit-btn">Submit</button>
+
+          <div class="step step-5">
+            <div class="form-group">
+              <h3>Pertanyaan 4</h3><br>
+              <label for="pertanyaan-4"><strong><em>Apakah kondisi fisik bangunan sekolah telah diperiksa secara berkala untuk memastikan keamanan, termasuk kekuatan struktur dan perawatan bangunan? </em></strong></label> <br>
+              <br>                
+              <input type="radio" id="opsi-4a" name="pertanyaan-4" value="opsi-4a">
+              <label for="opsi-4a">Ya, kondisi fisik bangunan sekolah secara berkala diperiksa dan dipelihara dengan baik. </label><br>
+              <br>
+              <input type="radio" id="opsi-4b" name="pertanyaan-4" value="opsi-4b">
+              <label for="opsi-4b">Ya, namun ada beberapa area yang belum diperiksa atau perlu perbaikan.</label><br>
+              <br>
+              <input type="radio" id="opsi-4c" name="pertanyaan-4" value="opsi-4c">
+              <label for="opsi-4c">Tidak yakin sejauh mana kondisi fisik bangunan sekolah diperiksa secara berkala.</label><br>
+              <br>
+              <input type="radio" id="opsi-4d" name="pertanyaan-4" value="opsi-4d">
+              <label for="opsi-3d">Saat ini belum ada pemeriksaan fisik berkala yang dilakukan untuk memastikan keamanan kondisi fisik bangunan sekolah</label><br>
             </div>
-      
-          </form>
+            <button type="button" class="previous-btn">Sebelumnya</button>
+            <button type="button" class="next-btn">Selanjutnya</button>
+          </div> 
+
+          <div class="step step-6">
+            <div class="form-group">
+              <h3>Pertanyaan 5</h3><br>
+              <label for="pertanyaan-5"> <strong><em>Apakah telah dilakukan evaluasi kebutuhan tambahan sistem keamanan fisik, seperti kamera pengawas atau pencahayaan malam? </em></strong></label> <br>
+              <br>                
+              <input type="radio" id="opsi-5a" name="pertanyaan-5" value="opsi-5a">
+              <label for="opsi-5a">Ya, Evaluasi telah dilakukan, dan langkah-langkah tambahan seperti pemasangan kamera pengawas atau peningkatan pencahayaan malam telah diimplementasikan. </label><br>
+              <br>
+              <input type="radio" id="opsi-5b" name="pertanyaan-5" value="opsi-5b">
+              <label for="opsi-5b">Ya, Evaluasi telah dilakukan, namun belum semua langkah tambahan seperti pemasangan kamera pengawas atau peningkatan pencahayaan malam diimplementasikan. </label><br>
+              <br>
+              <input type="radio" id="opsi-5c" name="pertanyaan-5" value="opsi-5c">
+              <label for="opsi-5c">Tidak yakin apakah telah dilakukan evaluasi kebutuhan tambahan sistem keamanan fisik. </label><br>
+              <br>
+              <input type="radio" id="opsi-5d" name="pertanyaan-5" value="opsi-5d">
+              <label for="opsi-5d">Saat ini belum ada evaluasi kebutuhan tambahan sistem keamanan fisik yang telah dilakukan di sekolah. </label><br>
+            </div>
+            <button type="button" class="previous-btn">Sebelumnya</button>
+            <button type="button" class="next-btn">Selanjutnya</button>
+          </div> 
+        
+          <div class="step step-7">
+            <div class="form-group">
+              <h3>B. Lingkungan Belajar yang Nyaman </h3><br>
+              <h3>Pertanyaan 6</h3><br>
+              <label for="pertanyaan-6"><strong><em>Apakah telah dilakukan penilaian ruang belajar untuk menentukan ketersediaan dan kualitas fasilitas seperti kursi, meja, dan fasilitas kenyamanan lainnya?</em></strong></label> <br>
+              <br>                
+              <input type="radio" id="opsi-6a" name="pertanyaan-6" value="opsi-6a">
+              <label for="opsi-6a">Ya, Penilaian telah dilakukan, dan fasilitas kenyamanan dianggap memadai dan berkualitas.</label><br>
+              <br>
+              <input type="radio" id="opsi-6b" name="pertanyaan-6" value="opsi-6b">
+              <label for="opsi-6b">Ya, Meskipun ada penilaian, terdapat beberapa area yang memerlukan perbaikan atau peningkatan untuk meningkatkan kenyamanan. </label><br>
+              <br>
+              <input type="radio" id="opsi-6c" name="pertanyaan-6" value="opsi-6c">
+              <label for="opsi-6c">Siswa dan warga sekolah tidak yakin sejauh mana penilaian ruang belajar telah dilakukan. </label><br>
+              <br>
+              <input type="radio" id="opsi-6d" name="pertanyaan-6" value="opsi-6d">
+              <label for="opsi-6d">Saat ini belum ada penilaian ruang belajar yang dilakukan untuk menentukan ketersediaan dan kualitas fasilitas.</label><br>
+            </div>
+            <button type="button" class="previous-btn">Sebelumnya</button>
+            <button type="button" class="next-btn">Selanjutnya</button>
+         </div>
+
+          <div class="step step-8">
+          <div class="form-group">
+            <h3>Pertanyaan 7</h3><br>
+            <label for="pertanyaan-7"> <strong><em> Apakah telah diidentifikasi area yang membutuhkan perbaikan atau peningkatan kenyamanan berdasarkan hasil penilaian ruang belajar?</em></strong></label> <br>
+            <br>                
+            <input type="radio" id="opsi-7a" name="pertanyaan-7" value="opsi-7a">
+            <label for="opsi-7a">Area yang membutuhkan perbaikan atau peningkatan telah diidentifikasi, dan langkah-langkah telah diambil untuk meningkatkan kenyamanan.</label><br>
+            <br>
+            <input type="radio" id="opsi-7b" name="pertanyaan-7" value="opsi-7b">
+            <label for="opsi-7b">Meskipun ada identifikasi area yang membutuhkan perbaikan, belum semua langkah perbaikan atau peningkatan diimplementasikan. </label><br>
+            <br>
+            <input type="radio" id="opsi-7c" name="pertanyaan-7" value="opsi-7c">
+            <label for="opsi-7c">Siswa dan warga sekolah tidak yakin apakah area yang membutuhkan perbaikan atau peningkatan sudah diidentifikasi.</label><br>
+            <br>
+            <input type="radio" id="opsi-7d" name="pertanyaan-7" value="opsi-7d">
+            <label for="opsi-7d">Saat ini belum ada identifikasi area yang membutuhkan perbaikan atau peningkatan berdasarkan hasil penilaian ruang belajar. </label><br>
+          </div>
+          <button type="button" class="previous-btn">Sebelumnya</button>
+          <button type="button" class="next-btn">Selanjutnya</button>
+        </div>         
+    
+        <div class="step step-9">
+          <div class="form-group">
+            <h3>Pertanyaan 8</h3><br>
+            <label for="pertanyaan-8"> <strong><em>Apakah suhu ruang kelas dianggap nyaman untuk siswa dan staf?</em></strong></label> <br>
+            <br>                
+            <input type="radio" id="opsi-8a" name="pertanyaan-8" value="opsi-8a">
+            <label for="opsi-8a">Suhu ruang kelas dianggap nyaman oleh siswa dan warga sekolah.</label><br>
+            <br>
+            <input type="radio" id="opsi-8b" name="pertanyaan-8" value="opsi-8b">
+            <label for="opsi-8b">Meskipun dianggap nyaman, beberapa anggota mungkin memiliki preferensi suhu yang berbeda.</label><br>
+            <br>
+            <input type="radio" id="opsi-8c" name="pertanyaan-8" value="opsi-8c">
+            <label for="opsi-8c">Siswa dan warga sekolah tidak yakin sejauh mana suhu ruang kelas dianggap nyaman.</label><br>
+            <br>
+            <input type="radio" id="opsi-8d" name="pertanyaan-8" value="opsi-8d">
+            <label for="opsi-8d">Suhu ruang kelas dianggap tidak nyaman oleh siswa dan warga sekolah.</label><br>
+          </div>
+          <button type="button" class="previous-btn">Sebelumnya</button>
+          <button type="button" class="next-btn">Selanjutnya</button>
+        </div>    
+
+        <div class="step step-10">
+          <div class="form-group">
+            <h3>Pertanyaan 9</h3><br>
+            <label for="pertanyaan-9"> <strong><em>Apakah sistem ventilasi telah dievaluasi, dan langkah-langkah perbaikan diambil jika diperlukan?</em></strong></label> <br>
+            <br>                
+            <input type="radio" id="opsi-9a" name="pertanyaan-9" value="opsi-9a">
+            <label for="opsi-9a">Evaluasi sistem ventilasi telah dilakukan, dan langkah-langkah perbaikan diambil jika diperlukan.</label><br>
+            <br>
+            <input type="radio" id="opsi-9b" name="pertanyaan-9" value="opsi-9b">
+            <label for="opsi-9b">Meskipun ada evaluasi, beberapa area masih memerlukan perbaikan pada sistem ventilasi.</label><br>
+            <br>
+            <input type="radio" id="opsi-9c" name="pertanyaan-9" value="opsi-9c">
+            <label for="opsi-9c">Siswa dan warga sekolah tidak yakin sejauh mana sistem ventilasi telah dievaluasi.</label><br>
+            <br>
+            <input type="radio" id="opsi-9d" name="pertanyaan-9" value="opsi-9d">
+            <label for="opsi-9d">Belum ada evaluasi sistem ventilasi yang dilakukan.</label><br>
+          </div>
+          <button type="button" class="previous-btn">Sebelumnya</button>
+          <button type="button" class="next-btn">Selanjutnya</button>
+        </div>         
+
+        <div class="step step-11">
+          <div class="form-group">
+            <h3>C. Lingkungan Belajar yang Menyenangkan </h3><br>
+            <h3>Pertanyaan 10</h3><br>
+            <label for="pertanyaan-10"> <strong><em>Apakah dinding kelas dihias dengan warna-warna cerah untuk menciptakan atmosfer yang menyenangkan?</em></strong></label> <br>
+            <br>                
+            <input type="radio" id="opsi-10a" name="pertanyaan-10" value="opsi-10a">
+            <label for="opsi-9a">Dinding kelas telah dihias dengan warna-warna cerah untuk menciptakan atmosfer yang menyenangkan.</label><br>
+            <br>
+            <input type="radio" id="opsi-10b" name="pertanyaan-10" value="opsi-10b">
+            <label for="opsi-9b">Meskipun sudah dihias, beberapa dinding kelas masih membutuhkan penambahan dekorasi warna cerah.</label><br>
+            <br>
+            <input type="radio" id="opsi-10c" name="pertanyaan-10" value="opsi-10c">
+            <label for="opsi-10c">Siswa dan warga sekolah tidak yakin sejauh mana dinding kelas dihias dengan warna-warna cerah.</label><br>
+            <br>
+            <input type="radio" id="opsi-10d" name="pertanyaan-10" value="opsi-10d">
+            <label for="opsi-10d">Saat ini dinding kelas belum dihias dengan warna-warna cerah.</label><br>
+          </div>
+          <button type="button" class="previous-btn">Sebelumnya</button>
+          <button type="button" class="next-btn">Selanjutnya</button>
         </div>
-      </section>   
+  
+        <div class="step step-12">
+          <div class="form-group">
+            <h3>Pertanyaan 11</h3><br>
+            <label for="pertanyaan-11"> <strong><em>Apakah mural atau lukisan tematik telah disertakan di kelas untuk meningkatkan keceriaan?</em></strong></label> <br>
+            <br>                
+            <input type="radio" id="opsi-11a" name="pertanyaan-11" value="opsi-11a">
+            <label for="opsi-11a">Mural atau lukisan tematik telah disertakan di kelas untuk meningkatkan keceriaan.</label><br>
+            <br>
+            <input type="radio" id="opsi-11b" name="pertanyaan-11" value="opsi-11b">
+            <label for="opsi-11b">Meskipun sudah disertakan, kelas mungkin memerlukan tambahan mural atau lukisan tematik.</label><br>
+            <br>
+            <input type="radio" id="opsi-11c" name="pertanyaan-11" value="opsi-11c">
+            <label for="opsi-11c">Siswa dan warga sekolah tidak yakin sejauh mana mural atau lukisan tematik telah disertakan di kelas.</label><br>
+            <br>
+            <input type="radio" id="opsi-11d" name="pertanyaan-11" value="opsi-11d">
+            <label for="opsi-11d">Saat ini belum ada mural atau lukisan tematik yang disertakan di kelas.</label><br>
+          </div>
+          <button type="button" class="previous-btn">Sebelumnya</button>
+          <button type="button" class="next-btn">Selanjutnya</button>
+        </div>
+ 
+        <div class="step step-13">
+          <div class="form-group">
+            <h3>Pertanyaan 12</h3><br>
+            <label for="pertanyaan-12"> <strong><em>Apakah terdapat papan tulis interaktif yang dapat digunakan siswa untuk mengekspresikan ide kreatif mereka?</em></strong></label> <br>
+            <br>                
+            <input type="radio" id="opsi-12a" name="pertanyaan-12" value="opsi-12a">
+            <label for="opsi-12a">Terdapat papan tulis interaktif di kelas yang dapat digunakan siswa untuk mengekspresikan ide kreatif mereka.</label><br>
+            <br>
+            <input type="radio" id="opsi-12b" name="pertanyaan-12" value="opsi-12b">
+            <label for="opsi-12b">Meskipun ada, papan tulis interaktif mungkin memerlukan perbaikan atau peningkatan.</label><br>
+            <br>
+            <input type="radio" id="opsi-12c" name="pertanyaan-12" value="opsi-12c">
+            <label for="opsi-12c">Siswa dan warga sekolah tidak yakin sejauh mana papan tulis interaktif sudah dapat digunakan di kelas.</label><br>
+            <br>
+            <input type="radio" id="opsi-12d" name="pertanyaan-12" value="opsi-12d">
+            <label for="opsi-12d">Saat ini belum ada papan tulis interaktif yang tersedia di kelas.</label><br>
+          </div>
+          <button type="button" class="previous-btn">Sebelumnya</button>
+          <button type="button" class="next-btn">Selanjutnya</button>
+        </div>
+ 
+        <div class="step step-14">
+          <div class="form-group">
+            <h3>Pertanyaan 13</h3><br>
+            <label for="pertanyaan-13"> <strong><em>Apakah dinding kelas dihiasi dengan proyek seni siswa untuk menciptakan suasana positif?</em></strong></label> <br>
+            <br>                
+            <input type="radio" id="opsi-13a" name="pertanyaan-13" value="opsi-13a">
+            <label for="opsi-13a">Dinding kelas dihiasi dengan proyek seni siswa untuk menciptakan suasana positif.</label><br>
+            <br>
+            <input type="radio" id="opsi-13b" name="pertanyaan-13" value="opsi-13b">
+            <label for="opsi-13b">Meskipun sudah dihiasi, dinding kelas mungkin memerlukan penambahan proyek seni siswa.</label><br>
+            <br>
+            <input type="radio" id="opsi-13c" name="pertanyaan-13" value="opsi-13c">
+            <label for="opsi-13c">Siswa dan warga sekolah tidak yakin sejauh mana dinding kelas dihiasi dengan proyek seni siswa.</label><br>
+            <br>
+            <input type="radio" id="opsi-13d" name="pertanyaan-13" value="opsi-13d">
+            <label for="opsi-13d">Saat ini belum ada proyek seni siswa yang dihiasi di dinding kelas.</label><br>
+          </div>
+          <button type="button" class="previous-btn">Sebelumnya</button>
+          <button type="button" class="next-btn">Selanjutnya</button>
+        </div>
+
+        <div class="step step-15">
+          <div class="form-group">
+            <h3>Pertanyaan 14</h3><br>
+            <label for="pertanyaan-14"> <strong><em>Apakah meja dan kursi diatur sedemikian rupa untuk memberikan kenyamanan dan fleksibilitas bagi siswa?</em></strong></label> <br>
+            <br>                
+            <input type="radio" id="opsi-14a" name="pertanyaan-14" value="opsi-14a">
+            <label for="opsi-14a">Meja dan kursi sudah diatur untuk memberikan kenyamanan dan fleksibilitas bagi siswa.</label><br>
+            <br>
+            <input type="radio" id="opsi-14b" name="pertanyaan-14" value="opsi-14b">
+            <label for="opsi-14b">Meskipun sudah diatur, meja dan kursi mungkin perlu disesuaikan untuk lebih meningkatkan kenyamanan dan fleksibilitas.</label><br>
+            <br>
+            <input type="radio" id="opsi-14c" name="pertanyaan-14" value="opsi-14c">
+            <label for="opsi-14c">Siswa dan warga sekolah tidak yakin sejauh mana meja dan kursi sudah diatur untuk memberikan kenyamanan dan fleksibilitas.</label><br>
+            <br>
+            <input type="radio" id="opsi-14d" name="pertanyaan-14" value="opsi-14d">
+            <label for="opsi-14d">Saat ini meja dan kursi belum diatur untuk memberikan kenyamanan dan fleksibilitas.</label><br>
+          </div>
+          <button type="button" class="previous-btn">Sebelumnya</button>
+          <button type="button" class="next-btn">Selanjutnya</button>
+        </div>
+
+        <div class="step step-16">
+          <div class="form-group">
+            <h3>Pertanyaan 15</h3><br>
+            <label for="pertanyaan-15"> <strong><em>Apakah taman sekolah atau area outdoor dimanfaatkan untuk kegiatan belajar yang berbeda?</em></strong></label> <br>
+            <br>                
+            <input type="radio" id="opsi-15a" name="pertanyaan-15" value="opsi-15a">
+            <label for="opsi-15a">Taman sekolah atau area outdoor dimanfaatkan untuk kegiatan belajar yang berbeda.</label><br>
+            <br>
+            <input type="radio" id="opsi-15b" name="pertanyaan-15" value="opsi-15b">
+            <label for="opsi-15b">Meskipun sudah dimanfaatkan, taman sekolah atau area outdoor mungkin perlu dikembangkan lebih lanjut untuk optimalisasi kegiatan belajar.</label><br>
+            <br>
+            <input type="radio" id="opsi-15c" name="pertanyaan-15" value="opsi-15c">
+            <label for="opsi-15c">Siswa dan warga sekolah tidak yakin sejauh mana taman sekolah atau area outdoor dimanfaatkan untuk kegiatan belajar yang berbeda.</label><br>
+            <br>
+            <input type="radio" id="opsi-15d" name="pertanyaan-15" value="opsi-15d">
+            <label for="opsi-15d">Saat ini taman sekolah atau area outdoor belum dimanfaatkan untuk kegiatan belajar yang berbeda.</label><br>
+          </div>
+          <button type="button" class="previous-btn">Sebelumnya</button>
+          <button type="button" class="next-btn">Selanjutnya</button>
+        </div>
+
+        <div class="step step-17">
+          <div class="form-group">
+            <h3>D. Lingkungan Belajar yang Inklusif</h3><br>
+            <h3>Pertanyaan 16</h3><br>
+            <label for="pertanyaan-16"> <strong><em> Apakah telah diidentifikasi program yang mendukung inklusivitas, seperti program pendidikan inklusif atau kegiatan khusus?</em></strong></label> <br>
+            <br>                
+            <input type="radio" id="opsi-16a" name="pertanyaan-16" value="opsi-16a">
+            <label for="opsi-16a">Telah diidentifikasi program yang mendukung inklusivitas, termasuk program pendidikan inklusif atau kegiatan khusus.</label><br>
+            <br>
+            <input type="radio" id="opsi-16b" name="pertanyaan-16" value="opsi-16b">
+            <label for="opsi-16b">Meskipun sudah diidentifikasi, mungkin perlu peningkatan atau penambahan program untuk lebih mendukung inklusivitas.</label><br>
+            <br>
+            <input type="radio" id="opsi-16c" name="pertanyaan-16" value="opsi-16c">
+            <label for="opsi-16c">Siswa dan warga sekolah tidak yakin sejauh mana program yang mendukung inklusivitas telah diidentifikasi di sekolah.</label><br>
+            <br>
+            <input type="radio" id="opsi-16d" name="pertanyaan-16" value="opsi-16d">
+            <label for="opsi-16d">Saat ini belum ada program yang diidentifikasi untuk mendukung inklusivitas di sekolah.</label><br>
+          </div>
+          <button type="button" class="previous-btn">Sebelumnya</button>
+          <button type="button" class="next-btn">Selanjutnya</button>
+        </div>
+
+        <div class="step step-18">
+          <div class="form-group">
+            <h3>Pertanyaan 17</h3><br>
+            <label for="pertanyaan-17"> <strong><em>Apakah komunitas sekolah terlibat dalam mengidentifikasi langkah-langkah untuk meningkatkan inklusivitas?</em></strong></label> <br>
+            <br>                
+            <input type="radio" id="opsi-17a" name="pertanyaan-17" value="opsi-17a">
+            <label for="opsi-17a">Komunitas sekolah terlibat aktif dalam mengidentifikasi langkah-langkah untuk meningkatkan inklusivitas.</label><br>
+            <br>
+            <input type="radio" id="opsi-17b" name="pertanyaan-17" value="opsi-17b">
+            <label for="opsi-17b">Meskipun sudah terlibat, mungkin perlu peningkatan keterlibatan komunitas untuk lebih efektif.</label><br>
+            <br>
+            <input type="radio" id="opsi-17c" name="pertanyaan-17" value="opsi-17c">
+            <label for="opsi-17c">Siswa dan warga sekolah tidak yakin sejauh mana komunitas sekolah terlibat dalam mengidentifikasi langkah-langkah untuk meningkatkan inklusivitas.</label><br>
+            <br>
+            <input type="radio" id="opsi-17d" name="pertanyaan-17" value="opsi-17d">
+            <label for="opsi-17d">Saat ini komunitas sekolah belum terlibat dalam mengidentifikasi langkah-langkah untuk meningkatkan inklusivitas.</label><br>
+          </div>
+          <button type="button" class="previous-btn">Sebelumnya</button>
+          <button type="submit" id ="submit" class="submit-btn">Kirim Jawaban</button>
+        </div>     
+    </form>
+  </section> 
 <script src='./script.js'> </script> 
 </body>
 </html>
