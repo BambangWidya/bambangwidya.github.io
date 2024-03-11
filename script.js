@@ -15,15 +15,15 @@ prevBtn.forEach((button) => {
 });
 
 form.addEventListener("submit", (e) => {
- // e.preventDefault();//
-  //const inputs = [];
-  //form.querySelectorAll("input").forEach((input) => {
-   // const { name, value } = input;
-    //inputs.push({ name, value });
-  //});
+e.preventDefault();
+const inputs = [];
+form.querySelectorAll("input").forEach((input) => {
+const { name, value } = input;
+/inputs.push({ name, value });
+/});
 window.open("terimakasih.html", "_blank");
-// console.log(inputs);//
-  //form.reset();
+console.log(inputs);
+form.reset();
 }); 
 
 function changeStep(btn) {
@@ -37,4 +37,24 @@ function changeStep(btn) {
     index--;
   }
   steps[index].classList.add("active");
+}
+
+function checkforblank1() {
+	if(document.getElementById(Nama).value == "") {
+	alert('Mohon diisi');
+	document.getElementById(Nama).stye.bordercolor = "red"; 
+	if(document.getElementById(sekolah).value == "") {
+	alert('Mohon diisi');
+	document.getElementById(sekolah).stye.bordercolor = "red";
+	if(document.getElementById(alamat).value == "") {
+	alert('Mohon diisi');
+	document.getElementById(alamat).stye.bordercolor = "red";
+  if(document.getElementById(jabatan).value == "") {
+    alert('Mohon diisi');
+    document.getElementById(jabatan).stye.bordercolor = "red";
+	return false;
+  }
+}
+}
+}
 }

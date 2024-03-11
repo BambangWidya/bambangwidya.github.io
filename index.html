@@ -31,12 +31,12 @@
                 <input type="text" class="text"id="Nama" name="Nama" required>
               </div>
               <div class="form-group">
-                <label for="Asal Sekolah">Asal Sekolah</label> <br>
-                <input class="text" type="text" id="Asal Sekolah" name="Asal Sekolah" required>
+                <label for="sekolah">Asal Sekolah</label> <br>
+                <input class="text" type="text" id="sekolah" name="sekolah" required>
               </div>
               <div class="form-group">
-                <label for="Alamat Sekolah">Alamat Sekolah</label> <br>
-                <input class="text" type="text" id="Alamat Sekolah" name="Alamat Sekolah" required>
+                <label for="alamat">Alamat Sekolah</label> <br>
+                <input class="text" type="text" id="alamat" name="alamat" required>
               </div>
               <div class="form-group">
                 <label for="jabatan">Jabatan</label><br>
@@ -48,7 +48,7 @@
                 </select>
               </div>
 
-              <button type="button" class="next-btn">Selanjutnya</button>
+              <button type="button" class="next-btn" onclick="return chechforblank1()">Selanjutnya</button>
             </div>
       
             <div class="step step-2">
@@ -56,7 +56,7 @@
                 <h3>A. Lingkungan Belajar yang Aman </h3><br>
                 <h3>Pertanyaan 1</h3><br>
                 <label for="pertanyaan-1"><strong><em>Apakah ada sistem keamanan elektronik, seperti kamera pengawas, yang terpasang di sekitar area sekolah? </em></strong></label> <br>         
-                <input type="radio" id="opsi-1a" name="pertanyaan-1" value="opsi-1a">
+                <input type="radio" id="opsi-1a" name="pertanyaan-1" value="opsi-1a" required>
                 <label for="opsi-1a">Ya, sistem keamanan elektronik terpasang dan berfungsi dengan baik. (Sekolah kami telah menginstal kamera pengawas untuk memantau aktivitas di sekitar area sekolah, yang dapat membantu meningkatkan keamanan.)</label>
                 <br> <input type="radio" id="opsi-1b" name="pertanyaan-1" value="opsi-1b"/>
                 <label for="opsi-1b">Ya, namun ada beberapa masalah teknis. (Meskipun sistem keamanan elektronik terpasang, ada beberapa masalah teknis yang perlu segera diperbaiki.)</label>
@@ -74,7 +74,7 @@
                 <h3>Pertanyaan 2</h3><br>
                 <label for="pertanyaan-2"><strong><em>Apakah terdapat prosedur evakuasi darurat yang telah diinformasikan kepada semua siswa dan warga sekolah? </em></strong></label> <br>
                 <br>                
-                <input type="radio" id="opsi-2a" name="pertanyaan-2" value="opsi-2a">
+                <input type="radio" id="opsi-2a" name="pertanyaan-2" value="opsi-2a" required>
                 <label for="opsi-2a">semua siswa dan warga sekolah telah diinformasikan dan terlatih mengenai prosedur evakuasi darurat (Sekolah telah mengadakan pelatihan dan informasi mengenai prosedur evakuasi darurat kepada semua siswa dan staf.)
                 </label><br>
                 <br>
@@ -96,7 +96,7 @@
                 <h3>Pertanyaan 3</h3><br>
                 <label for="pertanyaan-3"><strong><em>Bagaimana kebijakan pengawalan keamanan di area sekolah pada jam-jam tertentu, terutama saat siswa tiba dan pulang sekolah? </em></strong> </label> <br>
                 <br>                
-                <input type="radio" id="opsi-3a" name="pertanyaan-3" value="opsi-3a">
+                <input type="radio" id="opsi-3a" name="pertanyaan-3" value="opsi-3a" required>
                 <label for="opsi-3a">Pengawalan keamanan di area sekolah sangat baik pada semua jam, termasuk saat siswa tiba dan pulang sekolah (Terdapat petugas keamanan yang melakukan pengawalan dengan baik, memastikan keamanan siswa selama kedatangan dan kepulangan.) </label><br>
                 <br>
                 <input type="radio" id="opsi-3b" name="pertanyaan-3" value="opsi-3b">
@@ -119,7 +119,7 @@
               <h3>Pertanyaan 4</h3><br>
               <label for="pertanyaan-4"><strong><em>Apakah kondisi fisik bangunan sekolah telah diperiksa secara berkala untuk memastikan keamanan, termasuk kekuatan struktur dan perawatan bangunan? </em></strong></label> <br>
               <br>                
-              <input type="radio" id="opsi-4a" name="pertanyaan-4" value="opsi-4a">
+              <input type="radio" id="opsi-4a" name="pertanyaan-4" value="opsi-4a" required>
               <label for="opsi-4a">Ya, kondisi fisik bangunan sekolah secara berkala diperiksa dan dipelihara dengan baik. </label><br>
               <br>
               <input type="radio" id="opsi-4b" name="pertanyaan-4" value="opsi-4b">
@@ -140,7 +140,7 @@
               <h3>Pertanyaan 5</h3><br>
               <label for="pertanyaan-5"> <strong><em>Apakah telah dilakukan evaluasi kebutuhan tambahan sistem keamanan fisik, seperti kamera pengawas atau pencahayaan malam? </em></strong></label> <br>
               <br>                
-              <input type="radio" id="opsi-5a" name="pertanyaan-5" value="opsi-5a">
+              <input type="radio" id="opsi-5a" name="pertanyaan-5" value="opsi-5a" required>
               <label for="opsi-5a">Ya, Evaluasi telah dilakukan, dan langkah-langkah tambahan seperti pemasangan kamera pengawas atau peningkatan pencahayaan malam telah diimplementasikan. </label><br>
               <br>
               <input type="radio" id="opsi-5b" name="pertanyaan-5" value="opsi-5b">
@@ -162,7 +162,7 @@
               <h3>Pertanyaan 6</h3><br>
               <label for="pertanyaan-6"><strong><em>Apakah telah dilakukan penilaian ruang belajar untuk menentukan ketersediaan dan kualitas fasilitas seperti kursi, meja, dan fasilitas kenyamanan lainnya?</em></strong></label> <br>
               <br>                
-              <input type="radio" id="opsi-6a" name="pertanyaan-6" value="opsi-6a">
+              <input type="radio" id="opsi-6a" name="pertanyaan-6" value="opsi-6a" required>
               <label for="opsi-6a">Ya, Penilaian telah dilakukan, dan fasilitas kenyamanan dianggap memadai dan berkualitas.</label><br>
               <br>
               <input type="radio" id="opsi-6b" name="pertanyaan-6" value="opsi-6b">
@@ -183,7 +183,7 @@
             <h3>Pertanyaan 7</h3><br>
             <label for="pertanyaan-7"> <strong><em> Apakah telah diidentifikasi area yang membutuhkan perbaikan atau peningkatan kenyamanan berdasarkan hasil penilaian ruang belajar?</em></strong></label> <br>
             <br>                
-            <input type="radio" id="opsi-7a" name="pertanyaan-7" value="opsi-7a">
+            <input type="radio" id="opsi-7a" name="pertanyaan-7" value="opsi-7a" required>
             <label for="opsi-7a">Area yang membutuhkan perbaikan atau peningkatan telah diidentifikasi, dan langkah-langkah telah diambil untuk meningkatkan kenyamanan.</label><br>
             <br>
             <input type="radio" id="opsi-7b" name="pertanyaan-7" value="opsi-7b">
@@ -204,7 +204,7 @@
             <h3>Pertanyaan 8</h3><br>
             <label for="pertanyaan-8"> <strong><em>Apakah suhu ruang kelas dianggap nyaman untuk siswa dan staf?</em></strong></label> <br>
             <br>                
-            <input type="radio" id="opsi-8a" name="pertanyaan-8" value="opsi-8a">
+            <input type="radio" id="opsi-8a" name="pertanyaan-8" value="opsi-8a" required>
             <label for="opsi-8a">Suhu ruang kelas dianggap nyaman oleh siswa dan warga sekolah.</label><br>
             <br>
             <input type="radio" id="opsi-8b" name="pertanyaan-8" value="opsi-8b">
@@ -225,7 +225,7 @@
             <h3>Pertanyaan 9</h3><br>
             <label for="pertanyaan-9"> <strong><em>Apakah sistem ventilasi telah dievaluasi, dan langkah-langkah perbaikan diambil jika diperlukan?</em></strong></label> <br>
             <br>                
-            <input type="radio" id="opsi-9a" name="pertanyaan-9" value="opsi-9a">
+            <input type="radio" id="opsi-9a" name="pertanyaan-9" value="opsi-9a" required>
             <label for="opsi-9a">Evaluasi sistem ventilasi telah dilakukan, dan langkah-langkah perbaikan diambil jika diperlukan.</label><br>
             <br>
             <input type="radio" id="opsi-9b" name="pertanyaan-9" value="opsi-9b">
@@ -247,7 +247,7 @@
             <h3>Pertanyaan 10</h3><br>
             <label for="pertanyaan-10"> <strong><em>Apakah dinding kelas dihias dengan warna-warna cerah untuk menciptakan atmosfer yang menyenangkan?</em></strong></label> <br>
             <br>                
-            <input type="radio" id="opsi-10a" name="pertanyaan-10" value="opsi-10a">
+            <input type="radio" id="opsi-10a" name="pertanyaan-10" value="opsi-10a" required>
             <label for="opsi-9a">Dinding kelas telah dihias dengan warna-warna cerah untuk menciptakan atmosfer yang menyenangkan.</label><br>
             <br>
             <input type="radio" id="opsi-10b" name="pertanyaan-10" value="opsi-10b">
@@ -268,7 +268,7 @@
             <h3>Pertanyaan 11</h3><br>
             <label for="pertanyaan-11"> <strong><em>Apakah mural atau lukisan tematik telah disertakan di kelas untuk meningkatkan keceriaan?</em></strong></label> <br>
             <br>                
-            <input type="radio" id="opsi-11a" name="pertanyaan-11" value="opsi-11a">
+            <input type="radio" id="opsi-11a" name="pertanyaan-11" value="opsi-11a" required>
             <label for="opsi-11a">Mural atau lukisan tematik telah disertakan di kelas untuk meningkatkan keceriaan.</label><br>
             <br>
             <input type="radio" id="opsi-11b" name="pertanyaan-11" value="opsi-11b">
@@ -289,7 +289,7 @@
             <h3>Pertanyaan 12</h3><br>
             <label for="pertanyaan-12"> <strong><em>Apakah terdapat papan tulis interaktif yang dapat digunakan siswa untuk mengekspresikan ide kreatif mereka?</em></strong></label> <br>
             <br>                
-            <input type="radio" id="opsi-12a" name="pertanyaan-12" value="opsi-12a">
+            <input type="radio" id="opsi-12a" name="pertanyaan-12" value="opsi-12a" required>
             <label for="opsi-12a">Terdapat papan tulis interaktif di kelas yang dapat digunakan siswa untuk mengekspresikan ide kreatif mereka.</label><br>
             <br>
             <input type="radio" id="opsi-12b" name="pertanyaan-12" value="opsi-12b">
@@ -310,7 +310,7 @@
             <h3>Pertanyaan 13</h3><br>
             <label for="pertanyaan-13"> <strong><em>Apakah dinding kelas dihiasi dengan proyek seni siswa untuk menciptakan suasana positif?</em></strong></label> <br>
             <br>                
-            <input type="radio" id="opsi-13a" name="pertanyaan-13" value="opsi-13a">
+            <input type="radio" id="opsi-13a" name="pertanyaan-13" value="opsi-13a" required>
             <label for="opsi-13a">Dinding kelas dihiasi dengan proyek seni siswa untuk menciptakan suasana positif.</label><br>
             <br>
             <input type="radio" id="opsi-13b" name="pertanyaan-13" value="opsi-13b">
@@ -331,7 +331,7 @@
             <h3>Pertanyaan 14</h3><br>
             <label for="pertanyaan-14"> <strong><em>Apakah meja dan kursi diatur sedemikian rupa untuk memberikan kenyamanan dan fleksibilitas bagi siswa?</em></strong></label> <br>
             <br>                
-            <input type="radio" id="opsi-14a" name="pertanyaan-14" value="opsi-14a">
+            <input type="radio" id="opsi-14a" name="pertanyaan-14" value="opsi-14a" required>
             <label for="opsi-14a">Meja dan kursi sudah diatur untuk memberikan kenyamanan dan fleksibilitas bagi siswa.</label><br>
             <br>
             <input type="radio" id="opsi-14b" name="pertanyaan-14" value="opsi-14b">
@@ -352,7 +352,7 @@
             <h3>Pertanyaan 15</h3><br>
             <label for="pertanyaan-15"> <strong><em>Apakah taman sekolah atau area outdoor dimanfaatkan untuk kegiatan belajar yang berbeda?</em></strong></label> <br>
             <br>                
-            <input type="radio" id="opsi-15a" name="pertanyaan-15" value="opsi-15a">
+            <input type="radio" id="opsi-15a" name="pertanyaan-15" value="opsi-15a" required>
             <label for="opsi-15a">Taman sekolah atau area outdoor dimanfaatkan untuk kegiatan belajar yang berbeda.</label><br>
             <br>
             <input type="radio" id="opsi-15b" name="pertanyaan-15" value="opsi-15b">
@@ -374,7 +374,7 @@
             <h3>Pertanyaan 16</h3><br>
             <label for="pertanyaan-16"> <strong><em> Apakah telah diidentifikasi program yang mendukung inklusivitas, seperti program pendidikan inklusif atau kegiatan khusus?</em></strong></label> <br>
             <br>                
-            <input type="radio" id="opsi-16a" name="pertanyaan-16" value="opsi-16a">
+            <input type="radio" id="opsi-16a" name="pertanyaan-16" value="opsi-16a" required>
             <label for="opsi-16a">Telah diidentifikasi program yang mendukung inklusivitas, termasuk program pendidikan inklusif atau kegiatan khusus.</label><br>
             <br>
             <input type="radio" id="opsi-16b" name="pertanyaan-16" value="opsi-16b">
@@ -395,7 +395,7 @@
             <h3>Pertanyaan 17</h3><br>
             <label for="pertanyaan-17"> <strong><em>Apakah komunitas sekolah terlibat dalam mengidentifikasi langkah-langkah untuk meningkatkan inklusivitas?</em></strong></label> <br>
             <br>                
-            <input type="radio" id="opsi-17a" name="pertanyaan-17" value="opsi-17a">
+            <input type="radio" id="opsi-17a" name="pertanyaan-17" value="opsi-17a" required>
             <label for="opsi-17a">Komunitas sekolah terlibat aktif dalam mengidentifikasi langkah-langkah untuk meningkatkan inklusivitas.</label><br>
             <br>
             <input type="radio" id="opsi-17b" name="pertanyaan-17" value="opsi-17b">
@@ -412,6 +412,6 @@
         </div>     
     </form>
   </section> 
-<script src='./script.js'> </script> 
+<script defer src='./script.js'> </script> 
 </body>
 </html>
