@@ -19,8 +19,8 @@ e.preventDefault();
 const inputs = [];
 form.querySelectorAll("input").forEach((input) => {
 const { name, value } = input;
-/inputs.push({ name, value });
-/});
+inputs.push({ name, value });
+});
 window.open("terimakasih.html", "_blank");
 console.log(inputs);
 form.reset();
